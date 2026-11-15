@@ -1,3 +1,4 @@
+import { dirname } from "node:path";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -5,6 +6,7 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {
+    root: dirname(__filename),
     rules: {
       "*.css": {
         loaders: ["@tailwindcss/turbopack"],
