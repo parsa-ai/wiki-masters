@@ -1,5 +1,7 @@
 import WikiArticleViewer from "@/components/wiki-article-viewer";
 
+export const instant = false;
+
 interface ViewArticlePageProps {
   params: Promise<{
     id: string;

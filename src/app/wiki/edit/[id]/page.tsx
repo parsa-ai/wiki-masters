@@ -1,5 +1,6 @@
 import WikiEditor from "@/components/wiki-editor";
 
+export const instant = false;
 interface EditArticlePageProps {
   params: Promise<{
     id: string;
